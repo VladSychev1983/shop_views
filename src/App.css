@@ -26,7 +26,7 @@
     box-sizing: border-box;
 }
 
-/* стили для карточки товара */
+/* стили для карточки товара view_module*/
 .product-card {
   background: #fafafa;
   border-radius: 12px;
@@ -86,4 +86,29 @@
 .add-to-cart:hover {
   background: #e53935;
   color: #fff;
+}
+
+/* стили для карточки товара view_list*/
+.shop-container-list {
+    margin-top: 50px;
+}
+.product-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f8f8f8;
+  border-radius: 8px;
+  min-height: 70px;
+  gap: 0px;
+  margin-top: 5px;
+}
+
+.product-image-list {
+  height: 100px;
+  width: auto;
+}
+
+.shop-container-list .product-price {
+    font-weight: 600;
 }
