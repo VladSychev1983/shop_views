@@ -1,5 +1,7 @@
 import React from "react";
-import { products } from '../source'
+import products from '../source'
+import IconSwitch from "./IconSwitch";
+import ListView from './ListView'
 
 class Store extends React.Component {
     constructor(props) {
@@ -9,12 +11,13 @@ class Store extends React.Component {
             iconState: this.defaultIcon     //may be view_list or view_module
         }
     }
-    
+
     render() {
         return (
-            <div>
-                <h1>Store component.</h1>
-            </div>
+        <React.Fragment>
+        <IconSwitch icon={this.defaultIcon} />
+        <ListView products={products}/>
+        </React.Fragment>
         );
     }
 }

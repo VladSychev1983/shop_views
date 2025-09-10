@@ -3,9 +3,8 @@ import './App.css';
 
 function App() {
   return (
-    //include components here.
-    <Store />
-  );
+    <Store /> 
+        );
 }
 
 export default App;
